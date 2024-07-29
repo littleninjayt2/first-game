@@ -1,0 +1,265 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('images/background2.jpg'); /* Path to your background image */
+    background-size: cover; /* Makes the background cover the entire viewport */
+    background-position: center; /* Centers the background image */
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+#score, #timer, #level {
+    font-size: 24px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    color: white; /* Text color of the buttons */
+    background-color: #4682b4; /* Change this to your desired button color */
+}
+
+button:hover {
+    background-color: #0040ff; /* Change this to your desired hover color */
+}
+
+.hidden {
+    display: none;
+}
+
+#score, #timer, #level {
+    font-size: 24px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ff0000; 
+}
+h1 {
+    color: rgb(47, 222, 8); /* Tomato red */
+}
+ 
+
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Creates a parallax effect */
+    background-position: center;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+button:active {
+    animation: bounce 0.3s;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.level-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #ff4500;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#subscribeButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #000000; /* YouTube red */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#subscribeButton:hover {
+    background-color: #000000; /* Darker red */
+    transform: scale(1.05);
+}
+
+#subscribeButton:active {
+    transform: scale(1);
+}
+
+
+
+
+#score, #timer, #level, #highScore {
+    font-size: 28px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+button {
+    background: linear-gradient(45deg, #ff6347, #ff4500);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.8));
+    animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% { background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.8)); }
+    100% { background: radial-gradient(circle, rgba(255,255,255,0.05), rgba(0,0,0,0.9)); }
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    animation: particleAnimation 1s forwards;
+}
+
+@keyframes particleAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2) translateY(-100px);
+    }
+}
+
+#subscribeButton {
+    perspective: 1000px;
+}
+
+#subscribeButton {
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+#subscribeButton:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+
+
+body {
+    cursor: url('images/cursor.png'), auto; /* Replace with your cursor image */
+}
+
+#score, #timer, #level, #highScore {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#score.show, #timer.show, #level.show, #highScore.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#score.hide, #timer.hide, #level.hide, #highScore.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+
+#refreshButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#refreshButton:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
